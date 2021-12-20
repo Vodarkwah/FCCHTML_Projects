@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<main id="main">
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="title">Survey Form</title>
+
+    </head>
+    <link rel="stylesheet" href="Survey.css" type="text/css">
+    <!--Used to reference the css elements-->
+
+    <body>
+        <header>
+            <h1 id="title">Survey For Mode of Transportation</h1>
+            <p id="description">
+                This form would be used to assist in determining the most preferred means of transport
+            </p>
+        </header>
+        <div class="container" >
+            
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="name" class="form-control" id="name"  placeholder="  Enter Name Here"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" name="email" class="form-control" id="email"  placeholder="  Enter Email Here"
+                        required />
+                </div>
+                <div class="form-group" id="num">
+                    <label id="number-label" for="number">Age</label>
+                    <input type="number" name="age" class="form-control" id="number" min="10" max="120" 
+                        placeholder="  Age" />
+                </div>
+                <div class="form-group">
+                    <p>What is your preferred mode of Transportation?</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value> Select one</option>
+                        <option value="Railway">Travelling by Railway</option>
+                        <option value="Bus">Travelling by Car</option>
+                        <option value="Air">Travelling by Air</option>
+                        <option value="Walking">Prefer to walk</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p>Do you own a Car?</p>
+                    <label>
+                        <input name="my-car" value="Yes" type="radio" class="input-radio"
+                            checked />Yes</label>
+                    <label>
+                        <input name="my-car" value="No" type="radio" class="input-radio" />No</label>
+
+                    <label><input name="my-car" value="Privacy" type="radio" class="input-radio" />
+                        Prefer not to say</label>
+                </div>
+
+                <div class="form-group">
+                    <p>
+                        What is the most important thing you look for before purchasing a car?
+                    </p>
+                    <select id="Preference" name="Preference" class="form-control" required>
+                        <option disabled selected value>  Select an option</option>
+                        <option value="Price">Price</option>
+                        <option value="Manufacturer">Manufacturer</option>
+                        <option value="Year">Year</option>
+                        <option value="Model">Model</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p>
+                        Select you favorite car brands from the list below
+                
+                    </p>
+
+                    <label><input name="prefer" value="Opel" type="checkbox"
+                            class="input-checkbox" />Opel</label>
+                    <label>
+                        <input name="prefer" value="Toyota" type="checkbox" class="input-checkbox" />Toyota</label>
+                    <label><input name="prefer" value="Tesla" type="checkbox" class="input-checkbox" />Tesla</label>
+                    <label><input name="prefer" value="Yamaha" type="checkbox"
+                            class="input-checkbox" />Yamaha</label>
+                    <label><input name="prefer" value="Mercedes" type="checkbox"
+                            class="input-checkbox" >Mercedes</label>
+                    <label><input name="prefer" value="Bentley" type="checkbox"
+                            class="input-checkbox" />Bentley</label>
+                   
+                </div>
+
+                <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea id="comments" class="input-textarea" name="comment"
+                        placeholder="Enter your comment here..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="submit-button" class="submit-button">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </body>
+
+    </html>
+</main>
